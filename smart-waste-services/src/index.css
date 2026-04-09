@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --color-green-900: #0f3320;
+  --color-green-800: #1a4f30;
+  --color-green-700: #1e6b3c;
+  --color-green-600: #2d7a4f;
+  --color-green-500: #3a9c63;
+  --color-green-400: #4db87a;
+  --color-green-100: #dcf5e7;
+  --color-green-50: #f0faf4;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-body);
+    @apply text-gray-800;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+  }
+}
