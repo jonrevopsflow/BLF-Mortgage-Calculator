@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Work Sans", sans-serif;
+  --font-body: "Inter", sans-serif;
+  
+  --color-primary: #005894;
+  --color-primary-container: #0071bc;
+  --color-secondary: #0d6d2b;
+  --color-secondary-container: #9ef7a4;
+  --color-surface: #f8fafb;
+  --color-surface-container: #eceeef;
+  --color-surface-container-low: #f2f4f5;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-surface: #191c1d;
+  --color-on-surface-variant: #404751;
+  --color-outline: #717882;
+  --color-outline-variant: #c0c7d3;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-body;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+}
+
+.primary-gradient {
+  background: linear-gradient(to bottom, #005894, #0071bc);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
